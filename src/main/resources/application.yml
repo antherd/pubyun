@@ -1,3 +1,4 @@
 server:
   port: 8081
-update-uri: http://members.3322.net/dyndns/update%s%s
+pubyun:
+  update-uri: "http://members.3322.net/dyndns/update%s%s"

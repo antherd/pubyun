@@ -13,12 +13,12 @@ import java.net.UnknownHostException;
 @Log4j2
 class JasyptTest {
 
-    @Value("${hostname}")
-    private String hostname;
+    @Value("${pubyun.domain}")
+    private String domain;
 
     @Test
     void testIp() throws UnknownHostException {
-        String pubyunIp = InetAddress.getByName(hostname).getHostAddress();
+        String pubyunIp = InetAddress.getByName(domain).getHostAddress();
         String publicIp = InetUtil.getPublicIp();
         System.out.println("========== 公网ip: { " + publicIp + " }, 公云ip：{ " + pubyunIp + " } ==========");
     }

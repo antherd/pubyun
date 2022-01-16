@@ -23,7 +23,7 @@ public class DnsController {
         return "success";
     }
 
-    @Scheduled(cron="0 0/2 * * * ?")
+    @Scheduled(cron="0 0/5 * * * ?")
     public void monitorIp() throws UnknownHostException {
         dnsService.checkOrUpdateIp();
     }
